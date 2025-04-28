@@ -83,7 +83,7 @@ BASE_DIR = (
 BASE_PATH = Path(BASE_DIR)
 CONFIG_PATH = BASE_PATH / "config.json"
 
-IS_TERMUX = "DOCKER" in os.environ.get("PREFIX", "")
+IS_TERMUX = "DOCKER" in os.environ
 IS_CODESPACES = "CODESPACES" in os.environ
 IS_DOCKER = "DOCKER22" in os.environ
 IS_RAILWAY = "RAILWAY" in os.environ
